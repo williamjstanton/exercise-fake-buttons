@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Answer from "./answer/Answer";
 import FakeButton from "./components/FakeButton";
 import LiveRegion from "./components/LiveRegion";
 import Requirements from "./components/Requirements";
@@ -20,7 +19,6 @@ export default function App() {
       <Requirements />
       <LiveRegion>{clickEvent}</LiveRegion>
       <FakeButton onClick={clickHandler}>Continue</FakeButton>
-      <Answer onClick={clickHandler}>Finished</Answer>
     </div>
   );
 }

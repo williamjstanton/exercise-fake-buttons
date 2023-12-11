@@ -2,7 +2,7 @@ import classes from "../components/styles/FakeButton.module.css";
 
 function Answer(props) {
   function keyboardHandler(event) {
-    if (event.key === "Enter" && event.key === " ") {
+    if (event.key === "Enter" || event.key === " ") {
       props.onClick();
     }
   }
